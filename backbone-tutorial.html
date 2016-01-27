@@ -69,8 +69,9 @@
     <!-- Javascript code -->
     <!-- =============== -->
     <script type="text/javascript">
-    // your JS code goes here
+    //=============== 
     // model
+    //=============== 
     var app = {}; // create namespace for our app
     app.Todo = Backbone.Model.extend({
         defaults: {
@@ -83,7 +84,9 @@
             });
         }
     });
-    // collection
+    //=============== 
+    // Collection
+    //=============== 
     app.TodoList = Backbone.Collection.extend({
         model: app.Todo,
         localStorage: new Store("backbone-todo"),
@@ -194,9 +197,9 @@
             };
         }
     });
-    //------------
+    //============
     // Routers
-    //------------
+    //============
     app.Router = Backbone.Router.extend({
         routes: {
             '*filter': 'setFilter'
@@ -207,9 +210,9 @@
             app.todoList.trigger('reset');
         }
     });
-    //--------------
+    //=============== 
     // Initializers
-    //--------------
+    //=============== 
     app.router = new app.Router();
     Backbone.history.start();
     app.appView = new app.AppView();
