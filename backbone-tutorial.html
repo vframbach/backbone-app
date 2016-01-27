@@ -70,7 +70,7 @@
     <!-- =============== -->
     <script type="text/javascript">
     //=============== 
-    // model
+    // Model
     //=============== 
     var app = {}; // create namespace for our app
     app.Todo = Backbone.Model.extend({
@@ -101,7 +101,9 @@
     });
     // instance of the Collection
     app.todoList = new app.TodoList();
-    // views
+    //===============
+    // Views
+    //===============
     // renders individual todo items list (li)
     app.TodoView = Backbone.View.extend({
         tagName: 'li',
