@@ -4,7 +4,7 @@
 Backbone.js is a lightweight Javascript front-end library. In a Javascript-heavy application, Backbone solves the problem of having a web of jQuery selectors and callbacks, and provides a streamlined way to keep data in sync.
 
 
-Backbone has a hard dependency of [Underscore.js](http://underscore.js). Underscore.js is a Javascript utility/helper library.
+Backbone has one hard dependency, which is [Underscore.js](http://underscore.js), a Javascript utility/helper library. jQuery is needed for full use of the library.  
 
 ##Getting started
 [Backbone.js for Absolute Beginners](http://adrianmejia.com/blog/2012/09/11/backbone-dot-js-for-absolute-beginners-getting-started/) - A detailed, four-part tutorial to create a todo app.
